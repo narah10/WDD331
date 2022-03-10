@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="credit.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Idaho Central Credit Union</title>
+</head>
+
+<body>
+    <header>
+        <nav class="main-header">
+            <ul>
+                <li><a href="#">JOIN</a></li>
+                <li><a href="#">RATES</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">LOCATIONS</a></li>
+                <li><a href="#">EDUCATION</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">ESPANOL</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <div>eBranch Login</div>
+            <div class="login__form">
+                <form action="https://myebranch.iccu.com/Authentication/Username" method="post"
+                    enctype="application/x-www-form-urlencoded" class="form-container" name="ebranchLogin"
+                    autocomplete="off">
+                    <div style="width: 100%;">
+                        <input aria-label="username" onkeydown="openForm()" onclick="openForm()"
+                            id="ebranch-login-username" type="text" style="border-radius: 0;" placeholder="Username"
+                            name="UserName">
+                    </div>
+                    <div style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;" class="form-popup"
+                        id="ebranch-login-dropdown">
+                        <input aria-label="password" type="password" id="ebranch-login-password" placeholder="Password"
+                            style="letter-spacing: 0px;border-bottom: 1.5px solid lightgrey;" name="Password">
+                        <div style="text-align: center">
+                            <button aria-label="log in to eBranch" type="submit" id="ebranch-login-btn"
+                                class="btn"><span class="icon-padlock small-icon menu-padlock"></span>LOG IN</button>
+                        </div>
+                        <p aria-label="forgot username or password" id="ebranch-login-forgot" class="textAlignment">
+                            Forgot <a href="https://myebranch.iccu.com/ForgotUsername">Username</a> or <a
+                                href="https://myebranch.iccu.com/ForgotPassword">Password</a>?</p>
+                        <p aria-label="Register" class="textAlignment"><a onfocusout="closeForm()"
+                                href="https://myebranch.iccu.com/Registration">Register for Online Banking</a></p>
+                        <div aria-label="close" id="close-menu" onclick="closeForm()">
+                            <p style="text-align: center;position: absolute;top: 15%;right: 34%;">X</p>
+                        </div>
+                    </div>
+                </form>
+                <a class="enroll">Enroll Today</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="banner__top">
+                <img src="iccu-logo.png" alt="Credit Union Logo">
+                <nav class="banner__nav">
+                    <ul>
+                        <li><a href="#">PERSONAL</a></li>
+                        <li><a href="#">BUSINESS</a></li>
+                        <li><a href="#">LOANS</a></li>
+                        <li><a href="#">WEALTH</a></li>
+                        <li><a href="#">INSURANCE</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="banner__slide">
+                <div class="banner__letters">
+                    <h2>Dream Loans For Dream Home</h2>
+                    <h1>BUILD IT. BUY IT. BETTER IT</h1>
+                    <h2>CONSTRUCTION. MORTGAGE. HELOC</h2>
+                </div>
+                <div><button><a href="#">Learn More</a></button></div>
+            </div>
+            <div class="banner__circle"></div>
+        </div>
+        <div class="info">
+            <section class="info__member">
+                <img src="image/114-user.png">
+                <h3>Become a <br>Member</h3>
+                <p>Want to join the premier Credit Union
+                    in Idaho? Want to enjoy the most convenient and
+                    exceptional service you expect from your financial
+                    institution?</p>
+                <button><a href="#">JOIN TODAY</a></button>
+            </section>
+            <section class="info__mobile">
+                <img src="image/089-mobile.png">
+                <h3>VideoChat </h3>
+                <p>Talk face-to-face with a live service
+                    agent through your mobile device or desktop.
+                    It's secure and easy to use.
+                    Learn more</p>
+                <button><a href="#">VIDEO CHAT</a></button>
+            </section>
+            <section class="info__loan">
+                <img src="image/001-home.png">
+                <h3>Apply For <br> a Loan</h3>
+                <p>Loans for any purpose in your life.
+                    ICCU can help you build the house of your dreams,
+                    buy the car you've always wanted or even
+                    grow your business.</p>
+                <button><a href="#">APPLY TODAY</a></button>
+            </section>
+            <section class="info__more">
+                <img src="image/004-office.png">
+                <h3>Learn More<br>
+                    About ICCU</h3>
+                <p>Idaho Central Credit Union's mission
+                    is “Helping members achieve financial success.”
+                    This is the very core of what we do every day.</p>
+                <button><a href="#">LEARN MORE</a></button>
+            </section>
+        </div>
+
+        <div class="rates">
+            <h2>DAILY RATES</h2>
+            <img src="image/064-credit-card.png">
+            <label for="visa">Visa</label>
+            <input type="radio" id="visa" name="rates" class="rates__radio-visa">
+            <img src="image/002-home.png">
+            <label for="mortgage">Mortgage</label>
+            <input type="radio" id="mortgage" name="rates" class="rates__radio-mortgage">
+            <img src="image/177-truck.png">
+            <label for="auto">Auto</label>
+            <input type="radio" id="auto" name="rates" class="rates__radio-auto">
+            <img src="image/060-coin-dollar.png">
+            <label for="saving">Savings</label>
+            <input type="radio" id="saving" name="rates" class="rates__radio-saving">
+
+            <!-- <div class="rates_labels">
+                <p>VISA</p>
+                <p>MORTGAGE</p>
+                <p>AUTO</p>
+                <p>SAVINGS</p>
+            </div> -->
+
+            <div class="rates__visa">
+                <div class="rates__details">
+                    <p>PREMIER REWARDS</p>
+                    <p>AS LOW AS <br> <span class="highlight">12.74%</span> <br> VARIBALE APR</p>
+                </div>
+                <div class="rates__details">
+                    <p>REWARDS</p>
+                    <p>AS LOW AS <br> <span class="highlight">8.74% </span><br> VARIBALE APR</p>
+                </div>
+                <div class="rates__details">
+                    <p>VARIABLE PLATINUM</p>
+                    <p>AS LOW AS <br> <span class="highlight">7.74% </span><br> VARIBALE APR</p>
+                </div>
+                <div class="rates__details">
+                    <p>FIXED PLATINUM</p>
+                    <p>AS LOW AS <br> <span class="highlight">13.99% </span><br> VARIBALE APR</p>
+                </div>
+
+            </div>
+
+            <div class="rates__mortgage">
+                <div class="rates__details">
+                    <p>AS LOW AS <br> <span class="highlight">3.000% </span><br> 15 YEAR FIXED RATE - PURCHASE <br>
+                        3.281% APR</p>
+                </div>
+                <div class="rates__details">
+                    <p>AS LOW AS <br> <span class="highlight">3.000% </span><br> 15 YEAR FIXED RATE - REFINANCE <br>
+                        3.281% APR</p>
+                </div>
+                <div class="rates__details">
+                    <p>AS LOW AS <br> <span class="highlight">3.750% </span><br> 30 YEAR FIXED RATE - PURCHASE <br>
+                        3.912% APR</p>
+                </div>
+                <div class="rates__details">
+                    <p>AS LOW AS <br> <span class="highlight">3.750%</span> <br> 15 YEAR FIXED RATE - REFINANCE <br>
+                        3.912% APR</p>
+                </div>
+            </div>
+
+            <div class="rates__auto">
+                <div class="rates__details">
+                    <p>AS LOW AS <br> <span class="highlight">2.190% </span><br> 36 MONTHS APR <br>2019 OR NEWER</p>
+                </div>
+                <div class="rates__details">
+                    <p>AS LOW AS <br><span class="highlight"> 2.640% </span><br> 48 MONTHS APR <br>2019 OR NEWER</p>
+                </div>
+                <div class="rates__details">
+                    <p>AS LOW AS <br> <span class="highlight">2.590% </span><br> 36 MONTHS APR <br>2016 - 2018</p>
+                </div>
+                <div class="rates__details">
+                    <p>AS LOW AS <br> <span class="highlight">2.840%</span> <br> 48 MONTHS APR <br>2016 - 2018</p>
+                </div>
+            </div>
+
+            <div class="rates__saving">
+                <div class="rates__details">
+                    <p>UP TO <br> <span class="highlight">0.050%</span> APY <br> SHARE SAVINGS</p>
+                </div>
+                <div class="rates__details">
+                    <p>UP TO <br> <span class="highlight">0.150% </span>APY <br> YOUTH SAVINGS</p>
+                </div>
+                <div class="rates__details">
+                    <p>UP TO <br> <span class="highlight">0.150%</span> APY <br> MONEY MARKET SAVINGS</p>
+                </div>
+            </div>
+
+            <button><a href="#">Learn More</a></button>
+        </div>
+
+    </main>
+</body>
+<script>
+    function openForm() {
+        document.getElementById("ebranch-login-dropdown").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("ebranch-login-dropdown").style.display = "none";
+    }
+</script>
+
+</html>

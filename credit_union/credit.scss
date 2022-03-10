@@ -1,0 +1,295 @@
+/*VARIABLES for colors*/
+$body-background-color: #1c8900;
+$accent: #fe620d;
+$hover-on-white: #555759;
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 1em;
+    color: #555759;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+a:link, a:visited {
+    color: #555759;
+    text-decoration: none;
+}
+a:hover {
+    color: $body-background-color;
+}
+
+.main-header {
+    background-color: $body-background-color;
+    color:white;
+    display: flex;
+    & a:link, & a:visited {
+        color:white;
+    }
+    a:hover {
+        background-color: $hover-on-white;
+    }
+}
+
+.login {
+    position: relative;
+    &__form{
+        width: 200px;
+    }
+}
+
+.enroll {
+    position: absolute;
+    height: 20px;
+    background-color: $body-background-color;
+    padding: .2em 1em;
+    font-size: .6em;
+    border-radius: 0 0 30px 30px;
+
+}
+
+
+/*HEADER NAV SECTION*/
+header nav {
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        li {
+            margin-right: 1em;
+        }
+        a {
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+}
+
+/*login part*/
+header {
+    display: flex;
+    background-color: $body-background-color;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/*Banner section*/
+.banner{
+    background-image: url("mortgage-construction-slider.jpg");
+    background-size: 100%;
+    position: relative;
+    &__top {
+        position: relative;
+        img {
+            position: absolute;
+            top: 30px;
+            left: 400px;
+        }
+    }
+    &__letters{
+        text-align: center;
+        color: white;
+        padding: 50px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    &__nav ul {
+        justify-content: center;
+        list-style-type: none;
+        display: flex;
+        padding-top: 50px;
+        a {
+            padding: 10px;
+        }
+    }
+    &__slide{
+        text-align: center;
+        button{
+            background-color: transparent;
+            border: 3px solid white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 100px;
+            a {
+                color: white;
+            }
+            &:hover{
+                background-color: white;
+                a{
+                    color:$hover-on-white
+                }
+            }
+        }
+    }
+    &__circle{
+        background: white;
+        margin: 0 1em 1em 0;
+        height: 90px;
+        width: 180px;
+        border-top-left-radius: 40px * 2;
+        border-top-right-radius: 40px * 2;
+        position: absolute;
+        bottom: -60px;
+        left: 850px;
+    }
+}
+
+/*mid section*/
+.info {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 50px;
+    section {
+        max-width: 250px;
+        text-align: center;
+        margin: 10px;
+        img {
+            width: 35%;
+        }
+        h3{
+            font-size: 25px;
+            color: $body-background-color;
+            font-weight: normal;
+        }
+        p{
+            font-size: 18px;
+            color: $body-background-color;
+        }
+        button {
+            background-color: transparent;
+            border: 3px solid $accent;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 50px;
+            a{
+              color: $accent;      
+            }
+            &:hover{
+                background-color: $accent; 
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    &__mobile p{
+        margin-top: 55px;
+    }
+}
+
+.rates {
+    background-image: url(https://www.iccu.com/wp-content/uploads/2018/04/shutterstock_179752877_reduced_green.jpg);
+    text-align: center;
+    h2{
+        color: white;
+        padding: 30px;
+        font-weight: normal;
+        font-size: 40px;
+    }
+    img {
+        width: 50px;
+        margin-right: 60px;
+    }
+    button {
+        background-color: transparent;
+            border: 3px solid white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 100px;
+            a {
+                color: white;
+            }
+            &:hover{
+                background-color: white;
+                a{
+                    color:$hover-on-white
+                }
+            }
+    }
+
+}
+
+/*removes the check*/
+.rates {
+    [class*="rates__radio-"] {
+        display: none;
+    }
+}
+
+.highlight {
+    font-size: 40px;
+}
+// .rates_labels{
+//     display: flex;
+//     justify-content: center;
+//     p{
+//         margin-right: 0px;
+//     }
+    
+// }
+
+.rates__details {
+    padding-right:50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/*Rates Section*/
+.rates__mortgage, .rates__auto, .rates__saving {
+    display: none;
+    color: white;
+    justify-content: center;
+}
+  
+.rates__visa  {
+        display: flex;
+        color: white;
+        justify-content: center;
+    }
+
+  .rates__radio-visa:checked ~ .rates__visa {
+    display: flex;
+    
+  }
+  
+  .rates__radio-mortgage:checked ~ .rates__mortgage {
+    display: flex;
+  }
+
+  .rates__radio-mortgage:checked ~ .rates__visa {
+      display: none;
+  }
+
+
+  
+  .rates__radio-auto:checked ~ .rates__auto {
+    display: flex;
+  }
+
+  .rates__radio-auto:checked ~ .rates__visa{
+    display: none;
+  }
+  
+  .rates__radio-saving:checked ~ .rates__saving {
+    display: flex;
+  }
+
+  .rates__radio-saving:checked ~ .rates__visa{
+    display: none;
+  }
+  
